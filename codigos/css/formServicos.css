@@ -1,0 +1,80 @@
+/* estilização das telas-formulário de add e editar serviços */
+
+:root {
+    --preto: black;
+    --branco: #ffffff;
+    --vermelho: #ff3131;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style body */
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagens/TodoPreto.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+    padding-bottom: 50px;
+}
+
+/*  estilo header */
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.65);
+    color: var(--preto) !important;
+}
+
+/* estilo toast */
+
+.toast-container {
+    color: var(--preto) !important;
+    z-index: 9999 !important;
+}
+
+/*  estilo do hero */
+
+section.hero-site {
+    width: 100%;
+    height: 100vh;
+    color: var(--branco);
+}
+
+/* estilo card */
+
+.interface .card {
+    z-index: 1;
+    margin-top: 100px;
+    color: var(--branco);
+}
+
+.card .vermelho {
+    color: var(--vermelho);
+}
+
+.card,
+.card-header,
+.card-footer {
+    background-color: rgba(0, 0, 0, 0.429) !important;
+}
+
+.card-body {
+    background-color: rgba(71, 71, 71, 0.205);
+}
+
+.card-body a {
+    color: var(--branco);
+}

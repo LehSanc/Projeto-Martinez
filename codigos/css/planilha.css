@@ -1,0 +1,48 @@
+/* estilo para as telas de menu editar*/
+
+:root {
+    --preto: black;
+    --branco: #ffffff;
+    --vermelho: #ff3131;
+}
+
+/*  estilo header */
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.65);
+    color: var(--preto) !important;
+}
+
+/* estilo body */
+
+body {
+    background-image: url('../imagens/preto.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.interface {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* estilo toast */
+
+.toast-container {
+    color: var(--preto) !important;
+    z-index: 9999 !important;
+}
+
+/* estilo do hero */
+
+section.hero-site {
+    padding-top: 100px;
+    height: 100vb;
+}
+
+.fixed-bottom {
+    z-index: 1000;
+}

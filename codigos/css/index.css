@@ -1,0 +1,120 @@
+/* estilo para tela inicial */
+
+:root {
+    --preto: black;
+    --branco: #ffffff;
+    --vermelho: #ff3131;
+    --cinza: #a6a6a6db;
+}
+
+/* estilo botões usados */
+
+.btn-outline-light {
+    color: var(--vermelho) !important;
+    border-color: var(--vermelho) !important;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--vermelho) !important;
+    border-color: var(--vermelho) !important;
+    color: var(--branco) !important;
+}
+
+/* estilo body */
+
+body {
+    background-color: var(--branco);
+}
+
+.interface {
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* estilo toast */
+
+.toast-container {
+    color: var(--preto) !important;
+}
+
+/* estilo hero */
+
+section.hero-site {
+    height: 100vh;
+    background-image: url(../imagens/carroPreto.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    color: var(--branco);
+}
+
+.hero-site .interface {
+    color: var(--vermelho);
+    height: 100%;
+}
+
+.colunaStart {
+    flex: 1;
+}
+
+/* estilo card */
+
+.colunaStart .interface {
+    margin-top: 80px;
+    max-width: 700px;
+}
+
+.interface .card {
+    color: var(--branco);
+}
+
+.card .vermelho {
+    color: var(--vermelho);
+}
+
+.card,
+.card-header,
+.card-footer {
+    background-color: rgba(0, 0, 0, 0.429) !important;
+}
+
+.card-body {
+    background-color: rgba(71, 71, 71, 0.864);
+}
+
+.card-body a {
+    color: var(--branco);
+}
+
+/* estilo formulário */
+
+.hero-site .formulario {
+    display: none;
+    background-color: var(--cinza);
+    color: var(--preto);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.formulario a {
+    color: var(--vermelho);
+    text-decoration: none;
+}
+
+.formulario .input-group {
+    color: var(--vermelho);
+}
+
+.formulario form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 4%;
+}

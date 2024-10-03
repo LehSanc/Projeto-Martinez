@@ -1,0 +1,117 @@
+/* interface para telas que envolvem usuários: meu perfil, solicitações de cadastro e excluir usuário */
+
+/* estilo para as telas de menu principal*/
+
+:root {
+    --preto: black;
+    --branco: #ffffff;
+    --vermelho: #ff3131;
+}
+
+/*  estilo header */
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.65);
+    color: var(--preto) !important;
+}
+
+/* estilo body */
+
+body {
+    background-image: url('../imagens/cinza.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.interface {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* estilo toast */
+
+.toast-container {
+    color: var(--preto) !important;
+    z-index: 9999 !important;
+}
+
+/* estilo alert */
+.alert {
+    position: fixed;
+    z-index: 9999 !important;
+    pointer-events: auto;
+}
+
+/* estilo do hero */
+
+section.hero-site {
+    max-height: 30vb;
+    padding-top: 100px;
+}
+
+.modal {
+    z-index: 1050;
+    /* Certifique-se de que está acima dos outros elementos */
+}
+
+/* estilo card */
+
+.interface .card {
+    max-width: 700px;
+}
+
+.card {
+    color: var(--branco) !important;
+}
+
+.card .vermelho {
+    color: var(--vermelho);
+}
+
+.card,
+.card-header {
+    background-color: rgba(0, 0, 0, 0.307) !important;
+}
+
+.card-footer {
+    background-color: rgba(71, 71, 71, 0.864);
+}
+
+/* estilo section para resultados da busca */
+
+.resultCards {
+    padding: 4%;
+}
+
+.resultCards .card {
+    color: var(--branco);
+}
+
+.container-sm {
+    max-width: 400px !important;
+    max-height: 200px !important;
+    overflow: hidden !important;
+}
+
+/* estilo overlay */
+
+.overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.376);
+    color: var(--branco);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.overlay .card-footer,
+.overlay .card-header {
+    z-index: 9999;
+}
